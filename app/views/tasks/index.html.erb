@@ -33,7 +33,7 @@
         <td><%= task.allday ="◯"%></td>
         
         <% else %>
-        <td><%= task.allday %></td>
+        <td><%= task.allday ="" %></td>
         <% end %>
         
         <td><%= link_to "参照", task %></td>
@@ -62,7 +62,7 @@ function getNow() {
 	var day = now.getDate();
 
 	//出力用
-	var s = year + "年" + mon + "月" + day + "日"; 
+	var s = "今日は" + year + "年" + mon + "月" + day + "日"; 
 	return s;
 }
 </script>

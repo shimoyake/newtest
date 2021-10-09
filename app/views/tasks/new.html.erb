@@ -6,23 +6,23 @@
     
     <tr>
       <th>タイトル</th>
-      <td><%= f.text_field :tittle %></td>
+      <td><%= f.text_field :tittle , :required => true%></td>
     </tr>
     
     <tr>
       <th>開始日</th>
-      <td><%= f.date_field :bigin %></td>
+      <td><%= f.date_field :bigin , :required => true%></td>
       
     </tr>
     
     <tr>
       <th>終了日</th>
-      <td><%= f.date_field :finish %></td>
+      <td><%= f.date_field :finish , :required => true%></td>
     </tr>
     
     <tr>
       <th>終日</th>
-      <td><input name="task[is_allday]" type="hidden" value="0" /><input type="checkbox" value="1" checked="checked" name="task[is_allday]" id="task_is_allday" />終日の場合はチェックを入れます</td>
+      <td><%= f.check_box :allday %>終日の場合はチェックを入れます</td>
     </tr>
     
     <tr>
